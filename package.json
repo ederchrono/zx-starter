@@ -1,0 +1,22 @@
+{
+  "name": "zx-starter",
+  "version": "1.0.0",
+  "description": "Repository with an ZX example and some TS globals for VS Code",
+  "main": "hello-world.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ederchrono/zx-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ederchrono/zx-starter/issues"
+  },
+  "homepage": "https://github.com/ederchrono/zx-starter#readme",
+  "dependencies": {
+    "zx": "^1.6.0"
+  }
+}
