@@ -1,7 +1,13 @@
 #!/usr/bin/env zx
 
+/**
+ * Creates a folder and writes as many json files as you specify,
+ * filled with pokemon data from pokeapi.co
+ */
+
+const folderName = "pokedata";
 try {
-  await $`mkdir my-folder`;
+  await $`mkdir ${folderName}`;
 } catch (error) {
   // folder already created
 }
@@ -19,7 +25,7 @@ async function fetchAndWritePokemon(index) {
   if (resp.ok) {
     content = await resp.text();
   }
-  await fs.writeFile(`./my-folder/file-${index}.json`, content);
+  await fs.writeFile(`./${folderName}/pokemon-${index}.json`, content);
 }
 
 await Promise.all(promises);
